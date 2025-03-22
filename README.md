@@ -84,6 +84,6 @@ Ready to contribute? Fork this repository and start making changes! Together, we
 
 ## 📧 Contact
 If you have any questions or suggestions, feel free to reach out:
-- **Email**: your-email@example.com
+- **Email**: manupriyadhanushvayalambron@example.com
 - **GitHub Issues**: Open an issue in this repository.
 ```
