@@ -1,0 +1,99 @@
+/* === General Styles === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5f0; /* Soft background color */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    padding: 50px 20px; /* Increased padding for a more spacious look */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+  }
+  
+  header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem; /* Increased font size for prominence */
+    margin: 0;
+  }
+  
+  header .subtitle {
+    font-size: 1.5rem; /* Increased subtitle size */
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+  
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* === Solution Details Layout === */
+  .solution-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    background: white;
+    padding: 40px; /* Increased padding for a more spacious feel */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 15px; /* Consistent border radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .description p {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    color: #555;
+    line-height: 1.5; /* Improved line height for better readability */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px; /* Increased padding for a button */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Increased padding for footer */
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem; /* Increased footer text size */
+  }
