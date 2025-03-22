@@ -1,0 +1,151 @@
+/* === General Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Lighter background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Banner Styles === */
+.banner-header {
+  position: relative; /* For positioning the overlay */
+  height: 400px; /* Set a height for the header */
+  overflow: hidden; /* Hide overflow */
+}
+
+.banner-image {
+  background-image: url('banner.jpeg'); /* Set your banner image */
+  background-size: cover; /* Ensure the entire image fits without cropping */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Position it absolutely */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Send it to the back */
+}
+
+/* Add a pseudo-element for the blur effect */
+.banner-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 2; /* Place it above the banner image */
+}
+
+/* === Header Styles === */
+header {
+  position: relative; /* Ensure header is above the banner */
+  color: white;
+  padding: 60px 20px; /* Increased padding */
+  text-align: center;
+  z-index: 3; /* Ensure header is above the overlay */
+}
+
+/* === Navigation Bar === */
+nav {
+  background: #333; /* Dark background for nav */
+  padding: 10px 0; /* Padding for nav */
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  text-align: center; /* Center the nav items */
+}
+
+nav ul li {
+  display: inline; /* Horizontal list */
+  margin: 0 15px; /* Spacing between items */
+}
+
+nav ul li a {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+/* === Grid Container === */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns for desktop */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+/* === Letter Labels === */
+.letter-label {
+  font-size: 2.5rem; /* Increased size */
+  font-weight: bold;
+  text-align: center;
+  background: #e0e0e0; /* Light background for visibility */
+  border-radius: 10px;
+  padding: 30px 0; /* Increased padding */
+  grid-column: span 5; /* Span all columns */
+}
+
+/* === Grid Items === */
+.grid-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures images fit within the rounded corners */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+/* === Footer Styles === */
+footer {
+  background: #444; /* Darker footer */
+  color: white;
+  text-align: center;
+  padding: 30px; /* Increased padding */
+  margin-top: 40px;
+}
+
+/* === Media Queries for Mobile Responsiveness === */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+  }
+
+  .letter-label {
+      font-size: 2rem; /* Smaller font size on mobile */
+      padding: 20px 0; /* Reduced padding */
+  }
+
+  header {
+      padding: 40px 10px; /* Reduced padding for mobile */
+  }
+
+  nav ul li {
+      margin: 0 10px; /* Reduced spacing for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+
+  .letter-label {
+      font-size: 1.5rem; /* Further reduced font size for very small screens */
+      padding: 15px 0; /* Further reduced padding */
+  }
+}
