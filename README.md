@@ -48,10 +48,8 @@ You can contribute to this project **entirely using your mobile phone**! Follow 
 ├── index.html              # Main page with the 5x26 grid
 ├── details/                # Folder for individual solution pages
 │   └── solution-a1.html    # Example solution page
-├── styles/                 # Folder for CSS
-│   ├── global.css          # Shared styles (header, footer, buttons, etc.)
-│   ├── main.css            # Styles for the main page (grid layout)
-│   └── details.css         # Styles for the details page (solution-specific layout)
+│   └── styles.css         # Folder for CSS of details files
+├── styles.css              # Folder for CSS of index.html
 ├── README.md               # Project documentation
 └── CONTRIBUTING.md         # Contribution guidelines
 ```
